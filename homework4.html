@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		header, h1, p, section, button{
+			font-family: Roboto;
+		}
+		header{
+			display: flex;
+			justify-content: space-between;
+			margin: 10px 20px;
+			padding: 10px 40px;
+		}
+		.nav{
+			display: flex;
+		}
+		.nav > a{
+			display: block;
+			margin: 5px;
+			padding: 15px 5px;
+			color: #000;
+			text-decoration: none;
+		}
+		.btn{
+			margin-top: 8px;
+		}
+		.btn > button{
+			color: #FFFFFF;
+			border-radius: 10px;
+			background-color: #70ACD6;;
+			border: 1px solid #70ACD6;;
+			padding: 14px 60px;
+		}
+		hr{
+			margin: 0 60px;
+			border: 1px solid #000;
+			height: 0;
+		}
+		.first{
+			margin: 20px 60px;
+			display: flex;
+			height: 700px;
+		}
+		.first > div{
+			width: 50%;
+		}
+		.img{
+			background-image: url(D://Juliya/загрузки/img.png);
+			background-size: cover;
+			background-position: center;
+			height: 600px;
+		}
+		.text{
+			margin-left: 50px;
+			margin-top: 100px;
+
+		}
+		.text > h1{
+			font-size: 54px;
+		}
+		.text > h1 > span{
+			color: lightblue;
+		}
+		.text > p{
+			margin-right: 180px;
+			font-size: 24px;
+		}
+		.btn1{
+			background-color: #18A4E0;;
+			color: #FFFFFF;
+			border: lightblue;
+			padding: 10px 60px;
+			font-weight: bold;
+			border-radius: 10px;
+			font-size: 32px;
+			margin-right: 10px;
+		}
+		.btn2{
+			background-color: #FFFFFF;
+			border: 1px solid #18A4E0;;
+			color: lightblue;
+			padding: 10px 60px;
+			border-radius: 10px;
+			font-size: 32px;
+			margin-left: 10px;
+		} 
+		.btn2 > img{
+			border: 1px solid #18A4E0;;
+			border-radius: 20px;
+			padding: 8px 10px;
+			width: 8px;
+			height: 8px;
+		}
+		.exp{
+			display: flex;
+			background-color: #6383F7;
+			padding: 0;
+			height: 200px;
+			justify-content: space-around;
+			padding-top: 100px;
+		}
+		.num{
+			display: flex;
+
+		}
+		.number > h1{
+			font-size: 48px;
+		}
+		.number > p{
+			font-size: 24px;
+		}
+		.image-num > img{
+			width: 98px;
+			height: 107px;
+		}
+
+		.number{
+			line-height: 10px;
+		}
+		.main{
+			display: block;
+			text-align: center;
+			background-color: #F8FCFE;
+		}
+		.main1 > h1{
+			color: #32325C;
+			font-size: 36px;
+			padding-top: 91px;
+		}
+		.main1 > p{
+			color:  #707070;
+			font-size: 24px;
+		}
+		.main2{
+			display: block;
+			padding-bottom: 137px;
+		}
+		.section1, .section2{
+			display: flex;
+			margin: 0 70px;
+		}
+		.sec1, .sec2, .sec3, .sec4, .sec5, .sec6{
+			background-color: #FFFFFF;
+			margin: 19px 38px 19px 0;
+			box-shadow: 3px 3px 20px rgba(183, 183, 183, 0.17);
+			border-radius: 15px;
+
+		}
+		.sec3, .sec6{
+			margin-right: 0;
+		}
+		.sec1 > h1, .sec2 > h1, .sec3 > h1, .sec4 > h1, .sec5 > h1, .sec6 > h1{
+			font-size: 22px;
+			font-weight: bold;
+			color: #6383F7;
+		}
+		.sec1 > p, .sec2 > p, .sec3 > p, .sec4 > p, .sec5 > p, .sec6 > p{
+			font-size: 20px;
+			font-weight: normal;
+			color: #363636;
+			margin: 32px 41px;
+		}
+		.sec1 > img, .sec2 > img, .sec3 > img, .sec4 > img, .sec5 > img, .sec6 > img{
+			margin: 51px 137px 0;
+		}
+		.info{
+			display: block;
+		}
+		.info1, .info2{
+			display: flex;
+			margin: 75px 125px 20px 75px;
+		}
+		.inf1, .inf3{
+			margin-right: 75px;
+		}
+		.inf1, .inf4{
+			margin-top: 150px;
+		}
+		.inf1 > h1, .inf4 > h1{
+			font-size: 36px;
+			color: #32325C;
+		}
+		.inf1 > p, .inf4 > p{
+			font-size: 18px;
+			color: #546182;
+			font-weight: normal;
+		}
+		.inf1 > a, .inf4 > a{
+			font-size: 16px;
+			color: #0A8AFF;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		nav{
+			display: block;
+			text-align: center;
+			background-color: #F8FCFE;
+			padding-bottom: 160px;
+		}
+		.question1 > h1{
+			font-size: 36px;
+			color: #32325C;
+		}
+		.question1 > p{
+			font-size: 24px;
+			color: #707070;
+			margin: 22px 347px;
+		}
+		.question2{
+			padding: 0;
+			display: block;
+		}
+		.question2 ul{
+			display: block;
+		}
+		.question2 > li {
+			list-style-type: none;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 30px rgba(160, 160, 160, 0.25);
+			border-radius: 20px;
+			margin: 24px 185px;
+			display: flex;
+			justify-content: flex-start;
+			position: relative;
+			z-index: 2;
+		}
+		.question2 li > .s1{
+			margin: 48px 43px 48px 26px;
+			color: #F07B54;
+			font-size: 42px;
+			font-weight: bold;
+		}
+		.question2 li > p{
+			padding: 20px 650px 0 52px;
+			font-weight: bold;
+			font-size: 30px;
+			color: #000000;
+			width: 250px;
+		}
+		.question2 li > .s2{
+			margin: 53px 49px 0 53px;
+			color: #F07B54;
+			font-size: 32px;
+			font-weight: bold;
+		}
+		.question2 .l1::before{
+			width: 77px;
+			height: 77px;
+			background-color: #03CDE9;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			left: -40px;
+			top: 35px;
+			z-index: 2;
+		}
+		.question2 .l2::before{
+			width: 77px;
+			height: 77px;
+			background-color: #03CDE9;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			left: -40px;
+			top: 35px;
+			z-index: 0.5;
+		}
+		.question2 .l3::before{
+			width: 77px;
+			height: 77px;
+			background-color: #03CDE9;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			left: -40px;
+			top: 35px;
+			z-index: 0.5, 3;
+		}
+		article{
+			display: block;
+			text-align: center;
+			padding: 70px 50px;
+		}
+		.works1 > h1{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 36px;
+			color: #32325C;
+		}
+		.works1 > p{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 28px;
+			text-align: center;
+			color: #707070;
+
+		}
+		.works2{
+			display: flex;
+			justify-content: space-around;
+			padding: 70px 0 120px 0;
+			position: relative;
+			
+		}
+		.works-item1> img .works-item2> img .works-item3> img{
+			position: relative;
+			width: 100%;
+
+		}
+		.works-item-text1{
+			position: absolute;
+			top: 350px;
+			left: 100px;
+			background: rgba(13, 202, 228, 0.4);
+
+		}
+
+		.works-item-text2{
+			position: absolute;
+			top: 350px;
+			left: 590px;
+			background: rgba(0, 0, 0, 0.41);
+		}
+		.works-item-text3{
+			position: absolute;
+			top: 350px;
+			left: 1060px;
+			background: rgba(13, 202, 228, 0.4);
+
+		}
+		.foot1{
+			background: #F8FCFE;
+			display: flex;
+		}
+		.foot1 {
+			display: flex;
+			justify-content: space-around;
+		}
+		.f1 > h1{
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			text-align: center;
+			color: #000000;
+			margin-top: 50px;
+		}
+		.f1 > p, .f1 > pre{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 23px;
+			color: #363636;
+		}
+		.f1 > button{
+			background: #08CBE6;
+			border-radius: 10px;
+			border: 1px solid #08CBE6;
+			color: #FFFFFF;
+			padding: 16px 70px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			text-align: center;
+			margin: 50px 0 130px 0;
+		}
+
+		.foot2{
+			background: #32325C;
+			display: flex;
+			justify-content: space-between;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			padding: 61px 90px;
+		}
+		.f2 {
+			display: flex;
+			justify-content: space-around;
+		}
+		.f2 > .a{
+			padding-top: 20px;
+		}
+		.a > a{
+			text-decoration: none;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			margin-left: 49px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="image.png">
+		</div>
+		<div class="nav">
+			<a href="#">Home</a>
+			<a href="#">About us</a>
+			<a href="#">Our features</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact us</a>
+		</div>
+		<div class="btn">
+			<button>Sign in</button>
+		</div>
+
+	</header><hr>
+	<section class="first">
+		<div class="img">
+		</div>
+		<div class="text">
+			<h1>We help your <span> business </span> to grow their sales</h1>
+			<p>Awarded design studio which based in Almaty city</p>
+			<button class="btn1">Call to us</button>
+			<button class="btn2"><img src="Vector.png"> Watch video</button>
+		</div>
+	</section>
+	<section class="exp">
+		<div class="num">
+			<div class="image-num">
+				<img src="num1.png">
+			</div>
+			<div class="number">
+				<h1>450+</h1>
+				<p>Happy Clients</p>
+			</div>
+		</div>
+		<div class="num">
+			<div class="image-num">
+				<img src="num2.png">
+			</div>
+			<div class="number">
+				<h1>34+</h1>
+				<p>Running Projects</p>
+			</div>
+		</div>
+		<div class="num">
+			<div class="image-num">
+				<img src="num3.png">
+			</div>
+			<div class="number">
+				<h1>2452+</h1>
+				<p>Completed Projects</p>
+			</div>
+		</div>
+		</div>
+		
+	</section>
+	<section class="main">
+		<div class="main1">
+			<h1>Services We Provide</h1>
+			<p>Pellentesque eget velit tempus, porta ante eu, consectetur.</p>
+		</div>
+		<div class="main2">
+			<div class="section1">
+				<div class="sec1">
+					<img src="sec1.png">
+					<h1>Logo & Branding</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+				<div class="sec2">
+					<img src="sec2.png">
+					<h1>Website Development</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+				<div class="sec3">
+					<img src="sec3.png">
+					<h1>Mobile App Development</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+			</div>
+			<div class="section2">
+				<div class="sec4">
+					<img src="sec4.png">
+					<h1>Search Engine Optimization</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+				<div class="sec5">
+					<img src="sec5.png">
+					<h1>Pay-Per-Click</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+				<div class="sec6">
+					<img src="sec6.png">
+					<h1>Online Marketing</h1>
+					<p>Our comprehensive Online Marketing strategy will boost your website and traffic hence monthly sales.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main class="info">
+		<div class="info1">
+			<div class="inf1">
+				<h1>Reasons for choosing us</h1>
+				<p>Nunc eu augue at nunc consectetur venenatis sit amet sodales metus. Sed at gravida nisi, mattis lacinia ipsum. Pellentesque suscipit odio quis ligula maximus aliquet. Integer cursus ipsum et posuere ornare.</p>
+				<a href="#">Learn more about us</a>
+			</div>
+			<div class="inf2">
+				<img src="D://Juliya/загрузки/inf1.png">
+			</div>
+		</div>
+		<div class="info2">
+			<div class="inf3">
+				<img src="D://Juliya/загрузки/inf2.png">
+			</div>
+			<div class="inf4">
+				<h1>Donec vel tristique dui, at imperdiet nibh</h1>
+				<p>Nunc eu augue at nunc consectetur venenatis sit amet sodales metus. Sed at gravida nisi, mattis lacinia ipsum. Pellentesque suscipit odio quis ligula maximus aliquet. Integer cursus ipsum et posuere ornare.</p>
+				<a href="#">Learn more about us</a>
+			</div>
+		</div>
+	</main>
+	<nav>
+		<div class="question1">
+			<h1>Our Process</h1>
+			<p>Great websites add great values to your business. From wire-framing to
+PSD designing, we do it all.</p>
+		</div>
+		<ul class="question2">
+			<li class="l1"><span class="s1">01</span> <p>Consultation</p> <span class="s2">></span></li>
+			<li class="l2"><span class="s1">02</span> <p>Wire-framing</p><span class="s2">></span></li>
+			<li class="l3"><span class="s1">03</span><p> Designing </p><span class="s2">></span></li>
+		</ul>
+	</nav>
+	<article>
+		<div class="works1">
+			<h1>Latest News</h1>
+			<p>Great websites add great values to your business. From wire-framing to
+PSD designing, we do it all.</p>
+		</div>
+		<div class="works2">
+			<div class="works-item1">
+				<img src="w1.png">
+				<div class="works-item-text1">
+					<h1>CAREERS</h1>
+					<p>Winning tactics for a new digital agency</p>
+				</div>
+			</div>
+			<div class="works-item2">
+				<img src="w2.png">
+				<div class="works-item-text2">
+					<h1>UI/UX</h1>
+					<p>How to drive your customer experience</p>
+					<a href="#">learn more</a>
+				</div>
+			</div>
+			<div class="works-item3">
+				<img src="w3.png">
+				<div class="works-item-text3">
+					<h1>CAREERS</h1>
+					<p>Winning tactics for a new digital agency</p>
+				</div>
+			</div>
+		</div>
+		<div class="works3">
+			<img src="w4.png">
+		</div>
+	</article>
+	<footer>
+		<div class="foot1">
+			<div class="f1">
+				<h1>Head Quarter</h1>
+				<pre>868 S. La Sierra Drive
+Los Angeles
+California, USA</pre>
+			</div>
+			<div class="f1">
+				<h1>Email</h1>
+				<p>info@blaze.com</p>
+			</div>
+			<div class="f1">
+				<h1>Phone</h1>
+				<p>+1(234) 567-89-00</p>
+			</div>
+			<div class="f1">
+				<button>Contact us</button>
+			</div>
+		</div>
+		<div class="foot2">
+			<div class="f2">
+				<p>2020@Blaze, All rights reserved.</p>
+			</div>
+			<div class="f2">
+				<div class="a">
+				<a href="#">Terms of use</a>
+				</div>
+				<div class="a">
+				<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
